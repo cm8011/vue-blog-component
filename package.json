@@ -1,6 +1,6 @@
 {
   "name": "vue-blog-component",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A vue component to display blog posts",
   "main": "dist/vue-blog-component.umd.js",
   "module": "dist/vue-blog-component.esm.js",

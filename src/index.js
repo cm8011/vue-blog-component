@@ -1,5 +1,5 @@
 // Import vue component
-import Post from './Post';
+import Post from './components/Post.vue';
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
