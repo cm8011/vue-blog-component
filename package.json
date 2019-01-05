@@ -1,0 +1,19 @@
+{
+  "name": "vue-blog-component",
+  "version": "1.0.0",
+  "description": "A vue component to display blog posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cm8011/vue-blog-component.git"
+  },
+  "author": "christy@christymoormann.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cm8011/vue-blog-component/issues"
+  },
+  "homepage": "https://github.com/cm8011/vue-blog-component#readme"
+}
