@@ -1,5 +1,5 @@
 <template>
-  <div v-html="content" />
+  <div v-html="content" :class="{ 'default-style': useDefaultStyles }" />
 </template>
 
 <script>
@@ -8,17 +8,22 @@ export default {
     content: {
       type: String,
       required: true
+    },
+    useDefaultStyles: {
+      type: Boolean,
+      required: false,
+      default: true
     }
   }
 }
 </script>
 
 <style>
-a {
+.default-style a {
   color: #6d6d6d;
 }
 
-blockquote {
+.default-style blockquote {
   border-left: 2px solid #ebebeb;
   color: #6d6d6d;
   font-family: 'Open Sans', sans-serif;
@@ -30,7 +35,7 @@ blockquote {
   text-align: justify;
 }
 
-figcaption {
+.default-style figcaption {
   color: #6d6d6d;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -39,7 +44,7 @@ figcaption {
   text-align: center;
 }
 
-h1 {
+.default-style h1 {
   color: #373737;
   font-size: 48px;
   font-family: 'Playfair Display', sans-serif;
@@ -50,38 +55,38 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+.default-style h2 {
   color: #373737;
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
 
-h3 {
+.default-style h3 {
   color: #373737;
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: bold;
 }
 
-img {
+.default-style img {
   display: block;
   margin: 0 auto;
 }
 
-p {
+.default-style p {
   color: #6d6d6d;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   line-height: 24px;
 }
 
-.blog-body {
+.default-style .blog-body {
   background-color: #f9f9f9;
   padding: 1rem;
 }
 
-.blog-signature {
+.default-style .blog-signature {
   align-items: center;
   border-top: 1px solid #ebebeb;
   color: #6d6d6d;
@@ -93,24 +98,24 @@ p {
   padding-top: 1rem;
 }
 
-.blog-signature img {
+.default-style .blog-signature img {
   border-radius: 6rem;
   height: 3rem;
   margin: 0 1rem 0 0;
   width: 3rem;
 }
 
-.blog-signature > div:first-child {
+.default-style .blog-signature > div:first-child {
   align-items: center;
   display: flex;
   justify-content: flex-start;
 }
 
-.blog-signature > i {
+.default-style .blog-signature > i {
   font-size: 24px;
 }
 
-.subtitle {
+.default-style .subtitle {
   color: #6d6d6d;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
