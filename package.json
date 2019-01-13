@@ -13,21 +13,28 @@
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-blog-component.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-blog-component.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-blog-component.min.js",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@storybook/addon-knobs": "alpha",
     "@storybook/addon-notes": "^4.1.4",
     "@storybook/vue": "^4.1.4",
+    "@vue/test-utils": "^1.0.0-beta.28",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
+    "jest": "^23.6.0",
+    "jest-vue-preprocessor": "^1.4.0",
     "rollup": "^0.57.1",
     "rollup-plugin-buble": "^0.19.2",
     "rollup-plugin-vue": "^3.0.0",
-    "vue": "^2.5.16",
-    "vue-loader": "^15.5.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue": "^2.5.22",
+    "vue-loader": "^15.5.1",
+    "vue-template-compiler": "^2.5.22"
   },
   "repository": {
     "type": "git",
@@ -38,5 +45,16 @@
   "bugs": {
     "url": "https://github.com/cm8011/vue-blog-component/issues"
   },
-  "homepage": "https://github.com/cm8011/vue-blog-component#readme"
+  "homepage": "https://github.com/cm8011/vue-blog-component#readme",
+  "jest": {
+    "testRegex": "test.js$",
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
+  }
 }

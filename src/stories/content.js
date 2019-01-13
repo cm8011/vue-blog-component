@@ -1,3 +1,4 @@
+export default `
 <h1>This is the Blog Title</h1>
 <p class="subtitle">This is the subtitle</p>
 <div class="blog-body">
@@ -25,3 +26,4 @@ I disapprove of what you say, but will defend to the death your right to say it.
 <i class="fab fa-medium"></i>
 </div>
 </div>
+`
