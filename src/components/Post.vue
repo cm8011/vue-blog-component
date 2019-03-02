@@ -35,6 +35,28 @@ export default {
   text-align: justify;
 }
 
+.default-style blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.default-style blockquote::after{
+  content: '';
+}
+
+.default-style blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
 .default-style figcaption {
   color: #6d6d6d;
   font-family: 'Open Sans', sans-serif;
